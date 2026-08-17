@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#contenedor{
+background-color: #F5F5F5;
+
+}
+
+#header{
+    background-color: #14171A;
+}
+
+#pie{
+    background-color: #14171a;
+    
+}
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#titulo{
+    text-align: center;
+    color: #14171A;
+    font-size: 3rem;
+}
+
+.navegador{
+    text-align: right;
+    color:azure;
+    text-decoration: none;
+}
+
+#titulo-secundario{
+    text-align: center;
+    color: #e6b325;
+    font-size: 1rem;
+}
+
+hr{
+    height: 15px;
+    background-color: #E6B325;
+}
+
+a{
+    color:#ffffff
+}
+
+.descripcion{
+    text-align: justify;
+    color: #14171A;
+    font-size: 1.2rem;
+}
