@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquitrack | Dashboard </title>
+    <link rel="shortcut icon" href="./imagenes/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    <header class="header">
+        <div>
+            <button id="menu-toggle">☰</button>
+            <img src="/imagenes/logo.png" alt="Logo Maquitrack" width="200" height="100">
+        </div>
+        <div>
+            <span id="user-name">Hola, Usuario</span>
+        </div>
+
+        <div>
+            <button>🔔</button>
+        </div>
+    </header>
+
+    <div class="contenedor">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">🏠 Dashboard</a>
+                    </li>
+
+                    <li>
+                        <a href="#">🚜 Maquinaria</a>
+                    </li>
+
+                    <li>
+                        <a href="#">🛠️ Mantenimientos</a>
+                    </li>
+
+                    <li>
+                        <a href="#">📅 Programación</a>
+                    </li>
+
+                    <li>
+                        <a href="#">📊 Reportes</a>
+                    </li>
+
+                    <li>
+                        <a href="#">👥 Usuarios</a>
+                    </li>
+
+                    <li>
+                        <a href="#">⚙️ Configuración</a>
+                    </li>
+
+                    <li>
+                        <a href="#">🚪 Cerrar Sesión</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </aside>
+         <main class="contenido-principal">
+
+            <!-- BIENVENIDA -->
+            <section class="bienvenida">
+                <h1>Bienvenido a Maquitrack</h1>
+                <p>
+                    Gestiona y controla el mantenimiento de maquinaria pesada
+                    desde una sola plataforma.
+                </p>
+            </section>
+
+            <!-- TARJETAS KPI -->
+            <section class="tarjetas-dashboard">
+
+                <div class="card">
+                    <h3>Total Maquinaria</h3>
+                    <p>120</p>
+                </div>
+
+                <div class="card">
+                    <h3>Operativas</h3>
+                    <p>104</p>
+                </div>
+
+                <div class="card">
+                    <h3>En Mantenimiento</h3>
+                    <p>10</p>
+                </div>
+
+                <div class="card">
+                    <h3>Fuera de Servicio</h3>
+                    <p>6</p>
+                </div>
+
+            </section>
+
+            <!-- MANTENIMIENTOS -->
+            <section class="proximos-mantenimientos">
+
+                <h2>Próximos Mantenimientos</h2><br>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Máquina</th>
+                            <th>Fecha</th>
+                            <th>Tipo</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>MQ001</td>
+                            <td>Excavadora CAT 320</td>
+                            <td>20/09/2026</td>
+                            <td>Preventivo</td>
+                        </tr>
+
+                        <tr>
+                            <td>MQ002</td>
+                            <td>Retroexcavadora JCB</td>
+                            <td>25/09/2026</td>
+                            <td>Correctivo</td>
+                        </tr>
+
+                        <tr>
+                            <td>MQ003</td>
+                            <td>Bulldozer D6</td>
+                            <td>28/09/2026</td>
+                            <td>Preventivo</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </section>
+
+            <!-- ALERTAS -->
+            <section class="alertas">
+
+                <h2>Alertas Importantes</h2><br>
+
+                <div class="alerta">
+                    ⚠ La Excavadora CAT 320 requiere cambio de aceite.
+                </div>
+
+                <div class="alerta">
+                    ⚠ La Retroexcavadora JCB tiene mantenimiento programado para esta semana.
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+    
+</body>
+</html>
