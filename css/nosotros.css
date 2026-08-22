@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: ui sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #f4f4f4;
+    color: #14171A;
+    line-height: 1.6;
+}
+header{
+    background-color: #14171A;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+header img{
+    border-radius: 50%;
+}
+
+.navegador a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.navegador a:hover{
+    color: #E6B325;
+}
+#contenedor-nosotros{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+section{
+    background: #fff;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 2px rgba(0,0,0,0.1);
+    border-left: 6px solid #E6B325;
+}
+.subtitulos-nosotros{
+    font-size: 2rem;
+    color: #E6B325;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.parrafo-nosotros{
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #14171A;
+}
+#valores-nosotros{
+  padding: 2rem;
+  background-color: #fff;
+}
+#valores-nosotros h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #E6B325;
+  border-bottom: 2px solid #14171A;
+}
+.cards-container-nosotros{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.card-nosotros{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  perspective: 1000px;
+}
+.face-front-nosotros, .face-back-nosotros {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 2px solid #14171A;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  background: #fff;
+  transition: transform 0.6s ease;
+}
+.face-front-nosotros img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+.face-front-nosotros h3, .face-back-nosotros h3 {
+  color: #14171A;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+.face-back-nosotros {
+  transform: rotateY(180deg);
+  background: #E6B325;
+  color: #14171A;
+}
+.card-nosotros:hover .face-front-nosotros {
+  transform: rotateY(180deg);
+}
+.card-nosotros:hover .face-back-nosotros    {
+  transform: rotateY(360deg);
+}
+
+#nosotros h2{
+    font-size: 2rem;
+    color: #E6B325;
+    margin-bottom: 15px;
+    text-align: center;
+}
+footer{
+    background-color: #14171A;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+}
+footer a{
+    color: #E6B325;
+    text-decoration: none;
+    margin: 5px;
+    transition: color 0.3s ease;
+}
+footer a:hover{
+    color: #fff;
+}
+footer p{
+    margin-top: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
