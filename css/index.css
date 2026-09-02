@@ -53,6 +53,7 @@ section{
     border-radius: 12px;
     border-bottom: 4px solid #E6B325;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    border-left: 6px solid #E6B325;
 }
 
 
@@ -181,22 +182,244 @@ section h2{
     text-align: left;
     padding: 20px;
 }
+/* Estilos para la sección de nosotros */
 
-.footer-contenido{
+.navegador a{
     color: #fff;
     text-decoration: none;
-    margin: 5px;
+    margin: 0 15px;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
-.footer-contenido p:hover{
+.navegador a:hover{
     color: #E6B325;
 }
-.footer-contenido p{
+#contenedor-nosotros{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.subtitulos-nosotros{
+    font-size: 2rem;
+    color: #E6B325;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.parrafo-nosotros{
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #14171A;
+}
+#valores-nosotros{
+  padding: 2rem;
+  background-color: #fff;
+}
+#valores-nosotros h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #E6B325;
+  border-bottom: 2px solid #14171A;
+}
+.cards-container-nosotros{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.card-nosotros{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  perspective: 1000px;
+}
+.face-front-nosotros, .face-back-nosotros {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 2px solid #14171A;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  background: #fff;
+  transition: transform 0.6s ease;
+}
+.face-front-nosotros img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+.face-front-nosotros h3, .face-back-nosotros h3 {
+  color: #14171A;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+.face-back-nosotros {
+  transform: rotateY(180deg);
+  background: #E6B325;
+  color: #14171A;
+}
+.card-nosotros:hover .face-front-nosotros {
+  transform: rotateY(180deg);
+}
+.card-nosotros:hover .face-back-nosotros    {
+  transform: rotateY(360deg);
+}
+
+#nosotros h2{
+    font-size: 2rem;
+    color: #E6B325;
+    margin-bottom: 15px;
+    text-align: center;
+    /*aqui esta el footer general*/
+}
+footer{
+    background-color: #14171A;
+    color: #fff;
+    
+}
+footer p{
     margin-top: 10px;
     font-size: 0.9rem;
-}
-
-.copyright{
     text-align: center;
 }
+/*aqui estan los estilos del main de la parte de contactos (esta funcionando como footer*/
+.contacto-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 10px;
+  text-align: center;
+}
 
+.contacto-links a {
+  display:flex;
+  background-color: #000;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 10px 0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: inline-flex;
+  justify-content: center;
+  gap: 6px;
+}
+.contacto-links a{
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contacto-links a:hover {
+  background-color: #E6B325;
+  color: #fff;
+}
+
+.contacto-links i {
+  font-size: 1.2rem;
+}
+.contacto-seccion h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #E6B325;
+  text-align: center;
+
+}
+/*------------------------------------------------------------------------------------*/
+
+/*aqui estan los estilos de la parte de inicio de sesion y registro*/
+.login-body{
+    font-family: ui sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-container{
+    background-color: #0f0000;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(243, 239, 3, 0.922);
+    width: 100%;
+    max-width: 400px;
+
+}
+h2.incio-reg{
+    margin-bottom: 24px;
+    color: #e6b325;
+    text-align: center;
+}
+.form-group{
+    margin-bottom: 20px;
+
+}
+.form-group label{
+    display: block;
+    margin-bottom: 8px;
+    color: #e6b325;
+    font: size 14px;
+    
+
+}
+.form-group input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.btn-submit{
+    width: 100%;
+    padding: 12px;
+    background-color: #e6b325;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-submit:hover{
+    background-color: #e6b325;
+
+}
+.btn-principal{
+    background-color: #e6b325;
+    color:#000000;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-footer{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+.form-footer a{
+    color: #e6b325;
+    text-decoration: none;
+
+}
+.form-footer a:hover{
+    text-decoration: underline
+}
+/*---------------------------------*/
