@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>demo</title>
+</head>
+
+<body class="demo-body">
+    <div class="demo-container">
+        <h2 id="h2-demo">Solicita tu Demo</h2>
+        <form action="../php/enviar-demo.php" method="post">
+            <div class="form-demo">
+                <label for="nombre" class="label-demo">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="form-demo">
+                <label for="email" class="label-demo">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" placeholder="tu@correo.com" required><br>
+            </div>
+            <div class="form-demo" id="fecha-container">
+                <label for="fecha" class="label-demo">Fecha de nacimiento:</label><br>
+                <input type="date" id="fecha" name="fecha" min="1900-01-01" max="2010-12-31" required><br><br>
+            </div>
+
+
+            <label for="plan" class="label-demo">Industria:</label><br>
+            <select id="plan" name="plan">
+                <option value="construccion">Construcción</option>
+                <option value="mineria" selected>Minería</option>
+                <option value="agricola">Agrícola</option>
+            </select><br><br>
+
+            <label for="comentarios" class="label-demo">Comentarios:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="40"
+                placeholder="Cuéntanos algo..."></textarea><br><br>
+
+            <label class="label-demo">
+                <input type="checkbox" name="acepto" value="si" checked>
+                Acepto los términos y condiciones
+            </label><br><br>
+
+            <button type="submit" class="btn-demo">Enviar</button><br><br>
+            <button type="reset" class="btn-demo">Limpiar</button><br><br>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
