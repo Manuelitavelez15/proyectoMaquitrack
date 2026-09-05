@@ -273,8 +273,11 @@ section h2{
 }
 .cards-container-nosotros{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 320px);
+  justify-content: center;
   gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 .card-nosotros{
   position: relative;
